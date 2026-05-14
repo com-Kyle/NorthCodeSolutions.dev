@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+GitHub Drag and Drop Repo/
 
 # Editor directories and files
 .vscode/*
