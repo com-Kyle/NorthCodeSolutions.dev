@@ -11,16 +11,55 @@
     #020916;
 }
 
-.home-art {
+.art-stage {
+  position: relative;
   display: block;
   width: min(100%, 1942px);
   max-height: calc(100vh - 28px);
+}
+
+.home-art {
+  display: block;
+  width: 100%;
+  max-height: inherit;
   border: 1px solid rgba(0, 145, 255, 0.28);
   border-radius: 8px;
   object-fit: contain;
   box-shadow:
     0 24px 90px rgba(0, 0, 0, 0.48),
     0 0 60px rgba(0, 112, 255, 0.22);
+}
+
+.website-hotspot {
+  position: absolute;
+  top: 69.1%;
+  height: 17.8%;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.website-hotspot:hover,
+.website-hotspot:focus-visible {
+  background: rgba(0, 132, 255, 0.12);
+  box-shadow:
+    inset 0 0 0 2px rgba(56, 189, 248, 0.8),
+    0 0 28px rgba(0, 132, 255, 0.34);
+}
+
+.titanium-link {
+  left: 4.4%;
+  width: 9.6%;
+}
+
+.north-code-link {
+  left: 14.8%;
+  width: 11.8%;
+}
+
+.bushman-link {
+  left: 27.2%;
+  width: 10.3%;
 }
 
 .contact-panel {
@@ -90,10 +129,13 @@
     padding: 10px;
   }
 
-  .home-art {
+  .art-stage {
     width: max(980px, 100%);
     max-height: none;
-    transform-origin: top left;
+  }
+
+  .home-art {
+    max-height: none;
   }
 
   .contact-panel {
